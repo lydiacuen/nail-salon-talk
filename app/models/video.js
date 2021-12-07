@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-const reviewSchema = require('./review')
+//do not have comments yet, but something I will add in the future
+const commentSchema = require('./comment')
 
 const videoSchema = new mongoose.Schema({
 	name: {
@@ -14,7 +15,8 @@ const videoSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	review: [reviewSchema],
+	//do not have comments yet, but I will add these soon! Will start recording my first video this weekend! 
+	comment: [commentSchema],
 	//create a one-to-many relationship. where one user has many events
 	// using the User reference
 	owner: {

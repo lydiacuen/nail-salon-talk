@@ -1,5 +1,7 @@
+//do not have comments yet, but it is something I am going to want to add in the future. 
+
 const mongoose = require('mongoose')
-const reviewSchema = new mongoose.Schema(
+const commentSchema = new mongoose.Schema(
 	{
 		title: {
 			type: String,
@@ -15,5 +17,5 @@ const reviewSchema = new mongoose.Schema(
 	}
 )
 // for subdocument relationship we dont need to create a model instead we will
-// export the reviewSchema so it can be uses by the restaurantSchema
-module.exports = reviewSchema
+// export the commentSchema so it can be uses by the restaurantSchema
+module.exports = commentSchema
