@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# EMAIL="wr@wr" PASSWORD="wr" sh curl-scripts/auth/sign-in.sh
 API="http://localhost:4741"
 URL_PATH="/sign-in"
 
