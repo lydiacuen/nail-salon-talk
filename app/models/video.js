@@ -15,7 +15,7 @@ const videoSchema = new mongoose.Schema({
 		required: true,
 	},
 	review: [reviewSchema],
-	// create a one-to-many relationship. where one user has many events
+	//create a one-to-many relationship. where one user has many events
 	// using the User reference
 	owner: {
 		type: mongoose.Schema.Types.ObjectId,
